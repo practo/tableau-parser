@@ -1,0 +1,7 @@
+/.tox/
+/coverage/
+/venv/
+__pycache__/
+/.coverage
+*.egg*
+*.pyc
