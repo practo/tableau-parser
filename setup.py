@@ -12,8 +12,8 @@ class Coverage(Command):
     """
 
     description = (
-        "Run test suite against single instance of"
-        "Python and collect coverage data."
+        'Run test suite against single instance of'
+        'Python and collect coverage data.'
     )
     user_options = []
 
