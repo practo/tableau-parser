@@ -38,6 +38,23 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt
 ```
 
+Install [pre-commit](http://pre-commit.com) hooks.
+
+```bash
+pre-commit install
+```
+
+### Commit Guidelines
+
+Before committing pre-commit hooks will run to check for source standards.
+If you want to run a check manually before committing use:
+
+```bash
+pre-commit run
+```
+
+Read [pre-commit](http://pre-commit.com) documentation to learn more about it.
+
 ### Testing
 
 Install the project's dependencies and then run the project's tests.

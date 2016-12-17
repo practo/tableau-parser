@@ -1,0 +1,22 @@
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    sha: 96fb7fa10f2f4c11ed33482a9ad7474251e5e97f
+    hooks:
+    -   id: check-ast
+    -   id: check-case-conflict
+    -   id: check-docstring-first
+    -   id: check-merge-conflict
+    -   id: check-yaml
+    -   id: debug-statements
+    -   id: double-quote-string-fixer
+    -   id: end-of-file-fixer
+    -   id: forbid-new-submodules
+    -   id: name-tests-test
+    -   id: requirements-txt-fixer
+    -   id: trailing-whitespace
+        args:
+        - --markdown-linebreak-ext=*
+-   repo: git://github.com/Lucas-C/pre-commit-hooks
+    sha: c25201a00e6b0514370501050cf2a8538ac12270
+    hooks:
+    -   id: remove-crlf
+    -   id: remove-tabs
