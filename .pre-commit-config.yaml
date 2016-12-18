@@ -20,6 +20,7 @@
     -   id: debug-statements
     -   id: double-quote-string-fixer
     -   id: end-of-file-fixer
+        files: ''
     -   id: fix-encoding-pragma
         exclude: setup.py
     -   id: forbid-new-submodules
