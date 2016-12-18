@@ -6,6 +6,7 @@ env:
   - TOXENV=py35
   - TOXENV=pypy
   - TOXENV=lint
+cache: pip
 install:
   - pip install -r requirements-dev.txt
   - pre-commit install
