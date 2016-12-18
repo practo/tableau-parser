@@ -44,7 +44,7 @@ class Coverage(Command):
 setup(
     author='Anurag Agarwal',
     author_email='anurag.agarwal561994@gmail.com',
-    description='tableau-parser',
+    description='tableau_parser',
     download_url='',
     cmdclass={
         'coverage': Coverage,
@@ -53,9 +53,9 @@ setup(
         'lxml>=3.7.0,<3.8.0'
     ],
     license='MIT License',
-    name='tableau-parser',
+    name='tableau_parser',
     packages=[
-        'tableau-parser',
+        'tableau_parser',
     ],
     scripts=[],
     test_suite='tests',
