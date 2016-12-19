@@ -6,6 +6,8 @@
         language: python
         files: \.py$
         exclude: setup.py
+        args:
+        - --output-format=parseable
         additional_dependencies:
         -   pylint
 -   repo: git://github.com/pre-commit/pre-commit-hooks
