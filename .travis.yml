@@ -1,4 +1,5 @@
 language: python
+python: 2.7
 env:
   - TOXENV=py32
   - TOXENV=py33
@@ -9,18 +10,11 @@ env:
   - TOXENV=pre-commit
 cache: pip
 install:
-  - if [ "$TOXENV" = "lint" ]; then pip install pylint; fi
-  - if [ "$TOXENV" != "lint" -a "$TOXENV" != "pre-commit" ]; then pip install -r requirements-dev.txt; fi
-  - if [ "$TOXENV" = "pre-commit" ]; then
-      pip install pre-commit;
-      pre-commit install;
-    fi
+  - pip install tox
 matrix:
   fast_finish: true
 script:
-  - if [ "$TOXENV" = "lint" ]; then pylint --rcfile=.pylintrc -E tableau_parser; fi
-  - if [ "$TOXENV" != "lint" -a "$TOXENV" != "pre-commit" ]; then python setup.py test; fi
-  - if [ "$TOXENV" = "pre-commit" ]; then pre-commit run --all-files; fi
+  - tox -e $TOXENV
 after_success:
   - curl -Lo travis_after_all.py https://git.io/travis_after_all
   - python travis_after_all.py
