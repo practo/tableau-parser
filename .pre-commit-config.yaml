@@ -5,7 +5,6 @@
         entry: pylint
         language: python
         files: \.py$
-        exclude: setup.py
         args:
         - --output-format=parseable
         additional_dependencies:
