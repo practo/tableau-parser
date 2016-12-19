@@ -18,17 +18,6 @@ To update the project from within the project's folder you can run the following
 git pull --rebase
 ```
 
-### Virtual Environment
-
-It is better to keep a project specific virtual environment to not mix package versions between different projects.
-
-To create and activate a virtual environment use:
-
-```bash
-virtualenv venv
-. venv/bin/activate
-```
-
 ### Building
 
 Install the project's dependencies.
@@ -42,6 +31,19 @@ Install [pre-commit](http://pre-commit.com) hooks.
 
 ```bash
 pre-commit install
+```
+
+### Virtual Environment
+
+It is better to keep a project specific virtual environment to not mix package versions between different projects.
+
+A virtual environment is automatically created by `pre-commit` called `py_env-default`. If not created, run
+`pre-commit run --all-files`.
+
+To activate the virtual environment use:
+
+```bash
+. py_env-default/bin/activate
 ```
 
 ### Commit Guidelines

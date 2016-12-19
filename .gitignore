@@ -1,6 +1,6 @@
 /.tox/
 /coverage/
-/venv/
+/py_env-default/
 __pycache__/
 /.coverage
 *.egg*

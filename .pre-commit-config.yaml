@@ -1,3 +1,13 @@
+-   repo: local
+    hooks:
+    -   id: pylint
+        name: Pylint
+        entry: pylint
+        language: python
+        files: \.py$
+        exclude: setup.py
+        additional_dependencies:
+        -   pylint
 -   repo: git://github.com/pre-commit/pre-commit-hooks
     sha: 96fb7fa10f2f4c11ed33482a9ad7474251e5e97f
     hooks:
@@ -9,6 +19,8 @@
     -   id: debug-statements
     -   id: double-quote-string-fixer
     -   id: end-of-file-fixer
+    -   id: fix-encoding-pragma
+        exclude: setup.py
     -   id: forbid-new-submodules
     -   id: name-tests-test
     -   id: requirements-txt-fixer
